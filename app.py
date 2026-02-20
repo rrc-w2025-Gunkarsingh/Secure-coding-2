@@ -1,3 +1,4 @@
-# trigger super-linter success
+import os
 
-print("Hello from Python")
+user_input = input("Enter command: ")
+os.system(user_input)  # Vulnerable: Command Injection
