@@ -1,2 +1,3 @@
-# trigger codeql after permission fix
+# final scan trigger
+
 print("Hello from Python")
