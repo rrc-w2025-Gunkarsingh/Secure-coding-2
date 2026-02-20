@@ -1,0 +1,18 @@
+name: Bandit Security Scan
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '**.py'
+
+jobs:
+  bandit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Run Bandit
+        uses: PyCQA/bandit-action@v1.0.0
